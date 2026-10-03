@@ -1,0 +1,5 @@
+Day 1 of my DevOps journey
+Today I learned how to use the terminal.
+I can navigate folders and create files.
+This is exciting!
+I learned the commands: whoami, pwd, ls, cd, mkdir, touch.
