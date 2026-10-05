@@ -1,36 +1,40 @@
-# Linux Foundations for DevOps Engineers (Global Portfolio)
+# AWS Cloud Engineering Journey: Core Linux & Git Portfolio
 
-Welcome to my core Linux Engineering and Systems Administration portfolio. This repository serves as a centralized **Mono-Repo** documenting my practical hands-on journey from basic system operations to advanced privilege governance and resource auditing pipelines.
-
----
-
-## 📊 Infrastructure Project Dashboard
-
-| Project Phase | Description | Architecture Concepts | Technical Documentation |
-| :--- | :--- | :--- | :--- |
-| **Project 1: Linux Basics** | Provisioning structured DevOps workspaces, nested directories, and secure asset manipulation. | CLI Navigation, File Permissions, Local Backups | [View Project 1 Documentation](./notes/) |
-| **Project 2: Admin Toolkit** | Developing administrative automation tools, tracking user isolation, and auditing system metrics. | Pipes, Stream Redirection, Command Substitution | [View Project 2 Documentation](./projects/level2-practice/admin-toolkit/) |
+Welcome to my centralized **Mono-Repo** documenting my progression from foundational system administration to cloud infrastructure readiness. This dashboard tracks **6 consecutive core production-grade Linux projects** designed to build deep competencies before transitioning to advanced AWS architectures.
 
 ---
 
-## 🛠️ Core Engineering Skillset Mastered
+## 📊 Global Project Registry (6-Phase Roadmap)
 
-### 1. Identity & Privilege Governance (`PoLP`)
-* **Multi-Tenancy Isolation:** Configured dedicated user boundary parameters and system group structures (`chgrp`, `deluser`) to secure sensitive environments.
-* **Granular Permission Masks:** Implemented explicit numeric representation masks (`700` and `750`) to strictly enforce the Principle of Least Privilege.
+| Phase | Project Module | Status | Core Technical Domain | Verified Documentation |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | **Workspace Provisioning & Basics** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](./notes/) |
+| **02** | **Privilege Governance & Admin Toolkit** | ✅ Completed | DAC Permissions (`750`/`700`), Pipes, Redirection | [Project 2 Docs](./projects/level2-practice/admin-toolkit/) |
+| **03** | **Network Architecture & Configurations**| ⏳ Pending | IP Addressing, Routing Tables, SSH Hardening | `In Development` |
+| **04** | **Process Management & Automation** | ⏳ Pending | Daemon Control, Crontabs, System Resource Audits | `In Development` |
+| **05** | **Python Scripting in Linux Contexts** | ⏳ Pending | Scripted Automation, Dynamic Log Parsing | `In Development` |
+| **06** | **AWS Cloud Practitioner Readiness** | ⏳ Pending | CloudOps Simulation, IAM Governance Foundations | `In Development` |
 
-### 2. Advanced Stream & Process Redirection
-* **In-Memory Pipelines:** Chained compute operations cleanly using pipes (`|`) to aggregate file distributions with zero-disk-footprint execution overhead.
-* **Telemetry Segregation:** Separated standard compute outputs from system errors utilizing numeric channel routing (`2>`) for professional logs troubleshooting.
-* **Variable Capture Automation:** Deployed dynamic nested command substitution via `$()` inside automated shell utilities (`census.sh`).
+---
+
+## 🛠️ Combined Engineering Competencies
+
+### 1. Identity & System Isolation Frameworks
+* **Multi-Tenancy Enforcements:** Designed logical user boundary configurations and managed system groups (`chgrp`, `deluser`) to ensure strict context isolation.
+* **Granular Discretionary Access Control (DAC):** Hardened baseline environments using octal masks (`700`, `750`) to enforce the Principle of Least Privilege (PoLP).
+
+### 2. Stream Data Plumbing & Programmatic Scripting
+* **Zero-Disk-Footprint Execution:** Combined multi-stage commands using pipes (`|`) and pattern matching (`grep`) to aggregate metadata entirely in volatile memory.
+* **Telemetry Segregation:** Isolated runtime system logs from standard error paths utilizing discrete output channels (`2>`) to optimize troubleshooting diagnostics.
+* **Variable Capture Automation:** Formulated nested shell utility loops (`census.sh`) deploying dynamic command substitution constructs `$()`.
 
 ---
 
 ## 🛡️ Global Infrastructure Troubleshooting Index
-Detailed breakdowns of real-world environment failures encountered and mitigated during the engineering pipeline:
-* **WSL Subsystem Deadlock:** Recovered from hard hypervisor container lockouts (`Input/output error`) by forcing elevated daemon cycling (`LxssManager`).
-* **Path Traversal Constraints:** Resolved horizontal privilege escalation blocks by hardcoding explicit **Absolute Path Resolution** parameters across cross-account sessions.
+* **WSL Subsystem Deadlock:** Mitigated system-wide I/O crashes (Read-Only freezes) by forcing elevated daemon recycles (`LxssManager`) from the container host.
+* **Path Traversal Constraints:** Overcame target directory boundary traps across cross-account sessions (`su -`) by deploying explicit **Absolute Path Resolution**.
 
 ---
 *Maintained with absolute precision by [Ibrahim Ahmed El Sayed Mohamed](https://github.com/themummy556-netizen)*
+
 
