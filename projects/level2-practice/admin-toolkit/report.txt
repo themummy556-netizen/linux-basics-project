@@ -1,0 +1,23 @@
+==============================
+  SYSTEM INFORMATION REPORT
+==============================
+
+Report generated: Mon Oct  5 01:35:03 EEST 2026
+Current user: hisoka
+
+--- Top 10 Running Processes ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24228 15436 ?        Ss   Oct04   0:01 /sbin/init
+root           2  0.0  0.0   3760  2336 hvc0     Sl+  Oct04   0:00 /init
+root           3  0.0  0.0   3612  2096 hvc0     S+   Oct04   0:00 init-watcher
+root           8  0.0  0.0   3776  2316 hvc0     Sl+  Oct04   0:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          48  0.0  0.2  66788 21016 ?        S<s  Oct04   0:00 /usr/lib/systemd/systemd-journald
+systemd+      69  0.0  0.1  22428 14524 ?        Ss   Oct04   0:00 /usr/lib/systemd/systemd-resolved
+root          88  0.0  0.1  34636 11992 ?        Ss   Oct04   0:00 /usr/lib/systemd/systemd-udevd
+root         146  0.0  0.0   2888  2008 ?        Ss   Oct04   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         147  0.0  0.0   4472  3124 ?        Ss   Oct04   0:00 /usr/sbin/cron -f -P
+message+     148  0.0  0.0   8792  5384 ?        Ss   Oct04   0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+
+==============================
+  END OF REPORT
+==============================

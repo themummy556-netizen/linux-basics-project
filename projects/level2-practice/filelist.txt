@@ -1,0 +1,7 @@
+total 24
+drwxr-xr-x 2 hisoka hisoka 4096 Oct  5 00:58 .
+drwxr-xr-x 3 hisoka hisoka 4096 Oct  4 20:44 ..
+-rw-r--r-- 1 hisoka hisoka   36 Oct  5 00:58 errors.txt
+-rw-r--r-- 1 hisoka hisoka   25 Oct  5 00:54 greeting.txt
+-rwxr-xr-x 1 hisoka hisoka  104 Oct  4 22:26 hello.sh
+-rwx------ 1 hisoka hisoka  161 Oct  4 23:00 secret.sh
