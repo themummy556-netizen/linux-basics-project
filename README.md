@@ -1,19 +1,36 @@
-# Linux Basics for DevOps Beginners
+# Linux Foundations for DevOps Engineers (Global Portfolio)
 
-## 📌 Project Overview
-This repository documents my first hands-on lab on NextWork, where I designed and provisioned a complete, structured DevOps workspace using Linux CLI. The goal was to master core terminal workflows including safe data operations, text filtering, and directory architecture logic.
-
-* **Verified Live Documentation:** [https://nextwork.ai/refreshed_olive_vibrant_plum/docs/3d26053b-1b92-4c78-b105-95e1a4b32c2a]
-
-## 🛠️ Key Concepts & Tools Mastered
-* **System Inspection:** Utilized `pwd` and `ls` (with `-l` and `-a` flags) to audit hidden configuration dotfiles (`.bashrc`, `.profile`).
-* **Workspace Structuring:** Created nested architectures efficiently using `mkdir` and structured folders (`notes`, `projects`, `scripts`).
-* **Data Management:** Leveraged `cp` for secure local backups and `mv` for both moving and renaming assets seamlessly.
-* **Text Analysis & Lookup:** Mastered text streams manipulation using `nano` for writing, `cat` for auditing, and combining `grep` with `find` to isolate critical system logs.
-
-## 💡 Engineering Adaptability & Troubleshooting
-* **Environment Synchronization:** Due to interface differences where default graphical directories like `Documents` were missing, I adapted my workflow and safely executed all navigation operations inside my active `cloud-engineering-journey` directory instead.
-* **Syntax Debugging:** Successfully identified and resolved a `-bash: cd: too many arguments` error caused by using `$$` instead of the proper command chaining operator `&&`. 
+Welcome to my core Linux Engineering and Systems Administration portfolio. This repository serves as a centralized **Mono-Repo** documenting my practical hands-on journey from basic system operations to advanced privilege governance and resource auditing pipelines.
 
 ---
-*Maintained with passion as part of my AWS & Cloud Engineering Path.*
+
+## 📊 Infrastructure Project Dashboard
+
+| Project Phase | Description | Architecture Concepts | Technical Documentation |
+| :--- | :--- | :--- | :--- |
+| **Project 1: Linux Basics** | Provisioning structured DevOps workspaces, nested directories, and secure asset manipulation. | CLI Navigation, File Permissions, Local Backups | [View Project 1 Documentation](./projects/) |
+| **Project 2: Admin Toolkit** | Developing administrative automation tools, tracking user isolation, and auditing system metrics. | Pipes, Stream Redirection, Command Substitution | [View Project 2 Documentation](./projects/level2-practice/admin-toolkit/) |
+
+---
+
+## 🛠️ Core Engineering Skillset Mastered
+
+### 1. Identity & Privilege Governance (`PoLP`)
+* **Multi-Tenancy Isolation:** Configured dedicated user boundary parameters and system group structures (`chgrp`, `deluser`) to secure sensitive environments.
+* **Granular Permission Masks:** Implemented explicit numeric representation masks (`700` and `750`) to strictly enforce the Principle of Least Privilege.
+
+### 2. Advanced Stream & Process Redirection
+* **In-Memory Pipelines:** Chained compute operations cleanly using pipes (`|`) to aggregate file distributions with zero-disk-footprint execution overhead.
+* **Telemetry Segregation:** Separated standard compute outputs from system errors utilizing numeric channel routing (`2>`) for professional logs troubleshooting.
+* **Variable Capture Automation:** Deployed dynamic nested command substitution via `$()` inside automated shell utilities (`census.sh`).
+
+---
+
+## 🛡️ Global Infrastructure Troubleshooting Index
+Detailed breakdowns of real-world environment failures encountered and mitigated during the engineering pipeline:
+* **WSL Subsystem Deadlock:** Recovered from hard hypervisor container lockouts (`Input/output error`) by forcing elevated daemon cycling (`LxssManager`).
+* **Path Traversal Constraints:** Resolved horizontal privilege escalation blocks by hardcoding explicit **Absolute Path Resolution** parameters across cross-account sessions.
+
+---
+*Maintained with absolute precision by [Ibrahim Ahmed El Sayed Mohamed](https://github.com/themummy556-netizen)*
+
