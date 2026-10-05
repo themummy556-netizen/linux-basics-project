@@ -8,7 +8,7 @@ Welcome to my core Linux Engineering and Systems Administration portfolio. This 
 
 | Project Phase | Description | Architecture Concepts | Technical Documentation |
 | :--- | :--- | :--- | :--- |
-| **Project 1: Linux Basics** | Provisioning structured DevOps workspaces, nested directories, and secure asset manipulation. | CLI Navigation, File Permissions, Local Backups | [View Project 1 Documentation](./projects/) |
+| **Project 1: Linux Basics** | Provisioning structured DevOps workspaces, nested directories, and secure asset manipulation. | CLI Navigation, File Permissions, Local Backups | [View Project 1 Documentation](./notes/) |
 | **Project 2: Admin Toolkit** | Developing administrative automation tools, tracking user isolation, and auditing system metrics. | Pipes, Stream Redirection, Command Substitution | [View Project 2 Documentation](./projects/level2-practice/admin-toolkit/) |
 
 ---
