@@ -28,6 +28,10 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 * **Telemetry Segregation:** Isolated runtime system logs from standard error paths utilizing discrete output channels (`2>`) to optimize troubleshooting diagnostics.
 * **Variable Capture Automation:** Formulated nested shell utility loops (`census.sh`) deploying dynamic command substitution constructs `$()`.
 
+### 3: Software Packages & Runtime Process Governance
+* **Core Utilities Toolkit**: [`/admin-toolkit`](./admin-toolkit/)
+  * Developed an automated infrastructure monitor asset (`sysinfo.sh`) tracking real-time user identity, package registry counts (`apt`), and resource sorting queues (`ps aux`).
+  * Enforced strict environment configuration protection protocols and decoupled custom script outputs cleanly into persistent telemetry logs (`report.txt`).
 ---
 
 ## 🛡️ Global Infrastructure Troubleshooting Index
