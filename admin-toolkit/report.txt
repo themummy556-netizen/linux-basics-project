@@ -1,0 +1,21 @@
+=== System Info Report ===
+
+Current User: hisoka
+Date: Wed Oct  7 01:20:42 EEST 2026
+
+Installed Packages: 548
+
+=== Top 10 Processes by CPU ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1  24572 15676 ?        Ss   Oct06   0:13 /sbin/init
+root         125  0.0  0.1  34636 12004 ?        Ss   Oct06   0:07 /usr/lib/systemd/systemd-udevd
+root          75  0.0  0.2  50676 18536 ?        S<s  Oct06   0:03 /usr/lib/systemd/systemd-journald
+polkitd      966  0.0  0.1 306444  8372 ?        Ssl  Oct06   0:01 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root         323  0.0  0.0   3836  1432 ?        S    Oct06   0:02 /init
+hisoka       325  0.0  0.0   6916  6368 pts/0    Ss   Oct06   0:01 -bash
+root         196  0.0  0.3  44108 29780 ?        Ss   Oct06   0:01 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         280  0.0  0.4 123472 32544 ?        Ssl  Oct06   0:01 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+message+     188  0.0  0.0   8804  5488 ?        Ss   Oct06   0:01 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         200  0.0  0.1  18448  9428 ?        Ss   Oct06   0:01 /usr/lib/systemd/systemd-logind
+
+=== Report Complete ===
