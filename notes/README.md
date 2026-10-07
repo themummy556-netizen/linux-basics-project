@@ -2,7 +2,7 @@
 
 ## 🔗 Project Deployment & Verification Links
 * **NextWork Project Lab Link:** [Verify Project 1 on NextWork](https://nextwork.ai/refreshed_olive_vibrant_plum/docs/3d26053b-1b92-4c78-b105-95e1a4b32c2a)
-* **Parent Repository Pipeline:** [Cloud Engineering Journey Mono-Repo](https://github.com)
+* **Parent Repository Pipeline:** [Project 1 Docs](https://github.com)
 
 ---
 
