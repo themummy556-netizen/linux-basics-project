@@ -8,7 +8,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 
 | Phase | Project | Status | Core Technical Domain | Documentation |
 |---|---|---|---|---|
-| 01 | **Linux Basics for DevOps Beginners** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](./projects/level1-practice/README.md) |
+| 01 | **Linux Basics for DevOps Beginners** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](https://github.com) |
 | 02 | **Linux Level 2: Control Your System** | ✅ Completed | File Permissions (`750`/`700`), Users & Groups, Pipes, Redirection | [Project 2 Docs](./projects/level2-practice/README.md) |
 | 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](./projects/level3-practice/README.md) |
 | 04 | **Linux Level 4: Network, Services & Health** | ⏳ Pending | Networking Tools, systemd Services, System Health Checks | `In Development` |
