@@ -1,44 +1,35 @@
-# AWS Cloud Engineering Journey: Core Linux & Git Portfolio
+AWS Cloud Engineering Journey: Core Linux & Git Portfolio
 
-Welcome to my centralized **Mono-Repo** documenting my progression from foundational system administration to cloud infrastructure readiness. This dashboard tracks **6 consecutive core production-grade Linux projects** designed to build deep competencies before transitioning to advanced AWS architectures.
+Welcome to my centralized Mono-Repo documenting my progression from foundational system administration to cloud infrastructure readiness. This repository tracks 6 consecutive Linux projects designed to build deep competencies before transitioning to advanced AWS architectures.
 
----
+📊 Project Registry (6-Phase Roadmap)
+Phase	Project	Status	Core Technical Domain	Documentation
+01	Linux Basics for DevOps Beginners	✅ Completed	CLI Navigation, Backup Routines, Text Filtering	Project 1 Docs
+02	Linux Level 2: Control Your System	✅ Completed	File Permissions (750/700), Users & Groups, Pipes, Redirection	Project 2 Docs
+03	Linux Level 3: Software and Processes	✅ Completed	Package Management, Process Control, System Monitoring	Project 3 Docs
+04	Linux Level 4: Network, Services & Health	⏳ Pending	Networking Tools, systemd Services, System Health Checks	In Development
+05	Bash Scripting on Linux Mint	⏳ Pending	Variables, Conditionals, Loops, Functions	In Development
+06	Automate Linux Logs with Cron	⏳ Pending	Cron Jobs, Log Automation, Scheduled Tasks	In Development
+🛠️ Combined Engineering Competencies
+1. Identity & Access Management
+User & Group Administration: Created and managed user accounts and groups (useradd, chgrp, deluser) to enforce logical boundaries between users.
+File Permission Control: Applied symbolic and numeric permission modes (chmod 750, chmod 700) to enforce the Principle of Least Privilege (PoLP).
+2. Shell Scripting & Data Processing
+Pipes & Redirection: Combined multi-stage commands using pipes (|) and redirection (>, >>) to process and save command output.
+Pattern Matching: Used grep to filter and search text across files and command output.
+Shell Scripting: Wrote reusable Bash scripts (sysinfo.sh, census.sh) that automate system reporting tasks.
+3. Process & Package Management
+Monitored and managed running processes (ps, kill, jobs).
+Installed and managed software packages using standard Linux package managers (apt).
+🧩 Troubleshooting Log
 
-## 📊 Global Project Registry (6-Phase Roadmap)
+Real issues encountered and resolved during these projects, documented as Problem → Diagnosis → Solution.
 
-| Phase | Project Module | Status | Core Technical Domain | Verified Documentation |
-| :--- | :--- | :--- | :--- | :--- |
-| **01** | **Workspace Provisioning & Basics** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](./notes/) |
-| **02** | **Privilege Governance & Admin Toolkit** | ✅ Completed | DAC Permissions (`750`/`700`), Pipes, Redirection | [Project 2 Docs](./projects/level2-practice/admin-toolkit/) |
-| **03** | **Network Architecture & Configurations**| ⏳ Pending | IP Addressing, Routing Tables, SSH Hardening | `In Development` |
-| **04** | **Process Management & Automation** | ⏳ Pending | Daemon Control, Crontabs, System Resource Audits | `In Development` |
-| **05** | **Python Scripting in Linux Contexts** | ⏳ Pending | Scripted Automation, Dynamic Log Parsing | `In Development` |
-| **06** | **AWS Cloud Practitioner Readiness** | ⏳ Pending | CloudOps Simulation, IAM Governance Foundations | `In Development` |
+Issue	Diagnosis	Solution
+File not found when running cat on a report file	File was created in a different working directory than expected	Used find and pwd to locate the correct path, then verified with absolute paths
 
----
+(This table grows as more projects are completed.)
 
-## 🛠️ Combined Engineering Competencies
+👤 Maintained by
 
-### 1. Identity & System Isolation Frameworks
-* **Multi-Tenancy Enforcements:** Designed logical user boundary configurations and managed system groups (`chgrp`, `deluser`) to ensure strict context isolation.
-* **Granular Discretionary Access Control (DAC):** Hardened baseline environments using octal masks (`700`, `750`) to enforce the Principle of Least Privilege (PoLP).
-
-### 2. Stream Data Plumbing & Programmatic Scripting
-* **Zero-Disk-Footprint Execution:** Combined multi-stage commands using pipes (`|`) and pattern matching (`grep`) to aggregate metadata entirely in volatile memory.
-* **Telemetry Segregation:** Isolated runtime system logs from standard error paths utilizing discrete output channels (`2>`) to optimize troubleshooting diagnostics.
-* **Variable Capture Automation:** Formulated nested shell utility loops (`census.sh`) deploying dynamic command substitution constructs `$()`.
-
-### 3: Software Packages & Runtime Process Governance
-* **Core Utilities Toolkit**: [`/admin-toolkit`](./admin-toolkit/)
-  * Developed an automated infrastructure monitor asset (`sysinfo.sh`) tracking real-time user identity, package registry counts (`apt`), and resource sorting queues (`ps aux`).
-  * Enforced strict environment configuration protection protocols and decoupled custom script outputs cleanly into persistent telemetry logs (`report.txt`).
----
-
-## 🛡️ Global Infrastructure Troubleshooting Index
-* **WSL Subsystem Deadlock:** Mitigated system-wide I/O crashes (Read-Only freezes) by forcing elevated daemon recycles (`LxssManager`) from the container host.
-* **Path Traversal Constraints:** Overcame target directory boundary traps across cross-account sessions (`su -`) by deploying explicit **Absolute Path Resolution**.
-
----
-*Maintained with absolute precision by [Ibrahim Ahmed El Sayed Mohamed](https://github.com/themummy556-netizen)*
-
-
+Ibrahim Ahmed El Sayed Mohamed Aspiring Cloud & DevOps Engineer | Practicing Linux systems administration, version control workflows, and AWS infrastructure fundamentals.
