@@ -1,6 +1,6 @@
 # Linux System Administration & Privilege Governance Toolkit
 * **NextWork Project Lab Link:** [Verify Project 2 on NextWork](https://nextwork.ai/refreshed_olive_vibrant_plum/docs/d005387c-1f07-4574-af7a-975b712870d0)
-* **Parent Repository Pipline:** [project 2 Docs](projects/level2-practice)
+* **Parent Repository Pipline:** [project 2 Docs](projects)
 ## 📌 Architectural Overview
 This repository contains production-grade infrastructure automation scripts developed during **Day 12** of the Cloud Engineering Roadmap. The core focus is establishing secure multi-tenancy, granular access control tracking, and programmatic text telemetry extraction utilizing the native Linux kernel subsystems.
 
