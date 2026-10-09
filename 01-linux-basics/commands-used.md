@@ -1,29 +1,16 @@
 # Linux Commands Used in Project 1
 
 ## Navigation
-- `pwd` - Print working directory
-- `cd` - Change directory
-- `ls` - List files
-- `ls -la` - List with permissions
+pwd, ls, cd, tree
 
 ## File Management
-- `mkdir` - Create directory
-- `cp` - Copy files
-- `mv` - Move/rename files
-- `rm` - Remove files
+mkdir, cp, mv, rm
 
 ## Text Processing
-- `cat` - Display file contents
-- `grep` - Search for patterns
-- `head` - Show first lines
-- `tail` - Show last lines
-- `wc` - Count lines/words
+cat, grep, head, tail, wc
 
 ## Permissions
-- `chmod` - Change file permissions
-- `chown` - Change file owner
+chmod, chown
 
 ## Other
-- `clear` - Clear terminal
-- `find` - Search for files
-- `tree` - Show directory tree
+clear, find
