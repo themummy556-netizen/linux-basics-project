@@ -1,0 +1,17 @@
+Day 3: Permissions & Advanced Operations
+
+Activities:
+- Learned about file permissions (rwx)
+- Practiced chmod for permission changes
+- Used find command for file searching
+- Combined multiple operations for efficiency
+
+Key Commands:
+chmod 755 filename
+chmod 644 filename
+find . -name "*.txt"
+ls -l
+chown user:group filename
+
+Outcome:
+Understood Linux security model and advanced file operations.

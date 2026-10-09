@@ -1,5 +1,18 @@
-Day 1 of my DevOps journey
-Today I learned how to use the terminal.
-I can navigate folders and create files.
-This is exciting!
-I learned the commands: whoami, pwd, ls, cd, mkdir, touch.
+Day 1: Linux Basics - Workspace Setup
+
+Activities:
+- Created project directory structure
+- Learned pwd, ls, mkdir, cd commands
+- Understood Linux filesystem hierarchy
+- Practiced safe file operations with cp and mv
+
+Key Commands:
+pwd
+ls -la
+mkdir project-folder
+cd project-folder
+cp source.txt destination.txt
+mv old-name.txt new-name.txt
+
+Outcome:
+Successfully set up organized workspace for further learning.

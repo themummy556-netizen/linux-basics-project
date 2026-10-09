@@ -1,0 +1,17 @@
+Day 2: File System & Text Processing
+
+Activities:
+- Practiced viewing file contents with cat
+- Learned grep for pattern matching
+- Used head and tail for partial file viewing
+- Combined commands using pipes (|)
+
+Key Commands:
+cat filename.txt
+grep "pattern" filename.txt
+head -n 5 filename.txt
+tail -n 5 filename.txt
+cat file.txt | grep "search"
+
+Outcome:
+Gained proficiency in text filtering and command chaining.
