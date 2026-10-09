@@ -8,9 +8,9 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 
 | Phase | Project | Status | Core Technical Domain | Documentation |
 |---|---|---|---|---|
-| 01 | **Linux Basics for DevOps Beginners** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](notes) |
-| 02 | **Linux Level 2: Control Your System** | ✅ Completed | File Permissions (`750`/`700`), Users & Groups, Pipes, Redirection | [Project 2 Docs](./projects/level2-practice/README.md) |
-| 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](./projects/level3-practice/README.md) |
+| 01 | **Linux Basics for DevOps Beginners** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](01-linux-basics/README.md) |
+| 02 | **Linux Level 2: Control Your System** | ✅ Completed | File Permissions (`750`/`700`), Users & Groups, Pipes, Redirection | [Project 2 Docs](02-control-your-system/admin-toolkit/README.md) |
+| 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](03-software-and-processes/admin-toolkit/README.md) |
 | 04 | **Linux Level 4: Network, Services & Health** | ⏳ Pending | Networking Tools, systemd Services, System Health Checks | `In Development` |
 | 05 | **Bash Scripting on Linux Mint** | ⏳ Pending | Variables, Conditionals, Loops, Functions | `In Development` |
 | 06 | **Automate Linux Logs with Cron** | ⏳ Pending | Cron Jobs, Log Automation, Scheduled Tasks | `In Development` |
