@@ -36,10 +36,18 @@ This project covers foundational Linux CLI operations, workspace setup, file man
 - DevOps automation depends on shell commands
 - Production troubleshooting relies on these fundamentals
 
+## Project Link
+- NextWork: https://nextwork.ai/refreshed_olive_vibrant_plum/docs/3d26053b-1b92-4c78-b105-95e1a4b32c2a
+
+## Project Steps
+1. Set up Linux workspace
+2. Explore filesystem
+3. Practice file management
+4. Work with grep, head, and tail
+5. Document findings and results
+
 ## Result
 Successfully created organized workspace and practiced essential Linux commands for cloud operations.
 
-## How to Run
-```bash
-cd ~/devops-journey/01-linux-basics
-ls -la
+## Status
+✅ Completed
