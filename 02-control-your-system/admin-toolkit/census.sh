@@ -1,4 +1,4 @@
 #!/bin/bash
-echo $(find ~/devops-journey/projects/level2-practice -type f -name '*.txt' | wc -l)
-echo $(find ~/devops-journey/projects/level2-practice -type f | wc -l)
-echo $(find ~/devops-journey/projects/level2-practice -type d | wc -l)
+echo $(find ~/devops-journey/02-control-your-system -type f -name '*.txt' | wc -l)
+echo $(find ~/devops-journey/02-control-your-system -type f | wc -l)
+echo $(find ~/devops-journey/02-control-your-system -type d | wc -l)

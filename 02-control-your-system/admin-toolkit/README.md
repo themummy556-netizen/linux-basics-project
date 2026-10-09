@@ -48,7 +48,7 @@ The deployment enforces the **Principle of Least Privilege (PoLP)** through a mu
 * **Remediation Strategy:** Analyzed the login shell flags and verified that the tilde (`~`) character was resolving relatively against the destination account's pristine home directory instead of the hosting project path. Restructured the pipeline scripts to enforce **Absolute Path Resolution**:
   ```bash
   # Bypassed relative environment drift using explicit mapping
-  cat /home/hisoka/devops-journey/projects/level2-practice/admin-toolkit/report.txt
+  cat /home/hisoka/devops-journey/02-control-your-system/admin-toolkit/report.txt
   ```
   This explicit declaration systematically satisfied the kernel path lookup routines, ensuring stable validation across the cross-account infrastructure.
 
