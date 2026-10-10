@@ -1,0 +1,53 @@
+==============================
+  System Health Check Report
+==============================
+
+Date: Sat Oct 10 08:23:51 EEST 2026
+
+--- Uptime ---
+ 08:23:51 up  5:31,  1 user,  load average: 0.00, 0.00, 0.00
+
+--- Memory ---
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       518Mi       7.1Gi       4.1Mi       249Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+--- Disk Usage (/) ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.9G  954G   1% /
+
+--- Top 5 Processes by Memory ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         248  0.0  0.4 123476 32680 ?        Ssl  02:52   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         126  0.0  0.3  44112 29860 ?        Ss   02:52   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root          51  0.0  0.3  58868 25648 ?        S<s  02:52   0:01 /usr/lib/systemd/systemd-journald
+root           1  0.0  0.1  24760 16048 ?        Ss   02:52   0:09 /sbin/init
+systemd+      88  0.0  0.1  22428 14460 ?        Ss   02:52   0:00 /usr/lib/systemd/systemd-resolved
+
+--- Network Check ---
+Network: OK
+
+
+--- SSH Service ---
+active
+SSH: running
+
+--- Listening Ports ---
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:Port
+udp   UNCONN 0      0         127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0            0.0.0.0:5353      0.0.0.0:*   
+udp   UNCONN 0      0              [::1]:323          [::]:*   
+udp   UNCONN 0      0              [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::]:5353         [::]:*   
+tcp   LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*   
+tcp   LISTEN 0      4096       127.0.0.1:631       0.0.0.0:*   
+tcp   LISTEN 0      4096         0.0.0.0:22        0.0.0.0:*   
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*   
+tcp   LISTEN 0      4096           [::1]:631          [::]:*   
+tcp   LISTEN 0      4096            [::]:22           [::]:*   
+==============================
+  Report complete!
+==============================
