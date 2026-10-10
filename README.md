@@ -42,7 +42,7 @@ Real issues encountered and resolved during these projects, documented as **Prob
 |---|---|---|
 | File not found when running `cat` on a report file | File was created in a different working directory than expected | Used `find` and `pwd` to locate the correct path, then verified with absolute paths |
 | `ping` to my own IP returned "Destination Host Unreachable" | I had mistyped one digit of the IP | Copied the IP from `hostname -I` instead of typing it |
-| `curl` to port 631 returned "Connection refused" | CUPS was not installed on Ubuntu WSL (the platform used Linux Mint) | Installed it with `apt install cups` and started it with `systemctl` |
+| `curl` to port 631 returned "Connection refused" | CUPS (the printing service that listens on port 631) was not installed on my system | Installed it with `apt install cups` and started it with `systemctl` |
 | `chmod` returned "missing operand" and "No such file or directory" | Missing mode, then a relative path used from inside the same folder | Ran `chmod 755 healthcheck.sh` from the right folder after `pwd` and `ls` |
 | `ssh localhost` returned "Host key verification failed" | Typed `y` instead of the full word `yes` | Ran it again and typed `yes` |
 
