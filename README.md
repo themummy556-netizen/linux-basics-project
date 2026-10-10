@@ -11,7 +11,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 | 01 | **Linux Basics for DevOps Beginners** | ✅ Completed | CLI Navigation, Backup Routines, Text Filtering | [Project 1 Docs](01-linux-basics/README.md) |
 | 02 | **Linux Level 2: Control Your System** | ✅ Completed | File Permissions (`750`/`700`), Users & Groups, Pipes, Redirection | [Project 2 Docs](02-control-your-system/admin-toolkit/README.md) |
 | 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](03-software-and-processes/admin-toolkit/README.md) |
-| 04 | **Linux Level 4: Network, Services & Health** | ⏳ Pending | Networking Tools, systemd Services, System Health Checks | `In Development` |
+| 04 | **Linux Level 4: Network, Services & Health** | ✅ Completed | Networking Tools, systemd Services, System Health Checks | [Project 4 Docs](04-network-services-health/README.md) |
 | 05 | **Bash Scripting on Linux Mint** | ⏳ Pending | Variables, Conditionals, Loops, Functions | `In Development` |
 | 06 | **Automate Linux Logs with Cron** | ⏳ Pending | Cron Jobs, Log Automation, Scheduled Tasks | `In Development` |
 
@@ -41,6 +41,10 @@ Real issues encountered and resolved during these projects, documented as **Prob
 | Issue | Diagnosis | Solution |
 |---|---|---|
 | File not found when running `cat` on a report file | File was created in a different working directory than expected | Used `find` and `pwd` to locate the correct path, then verified with absolute paths |
+| `ping` to my own IP returned "Destination Host Unreachable" | I had mistyped one digit of the IP | Copied the IP from `hostname -I` instead of typing it |
+| `curl` to port 631 returned "Connection refused" | CUPS was not installed on Ubuntu WSL (the platform used Linux Mint) | Installed it with `apt install cups` and started it with `systemctl` |
+| `chmod` returned "missing operand" and "No such file or directory" | Missing mode, then a relative path used from inside the same folder | Ran `chmod 755 healthcheck.sh` from the right folder after `pwd` and `ls` |
+| `ssh localhost` returned "Host key verification failed" | Typed `y` instead of the full word `yes` | Ran it again and typed `yes` |
 
 *(This table grows as more projects are completed.)*
 
