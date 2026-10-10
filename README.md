@@ -52,5 +52,5 @@ Real issues encountered and resolved during these projects, documented as **Prob
 
 ## 👤 Maintained by
 
-**Ibrahim Ahmed El Sayed Mohamed**
+**Ibrahim Ahmed El Sayed**
 Aspiring Cloud & DevOps Engineer | Practicing Linux systems administration, version control workflows, and AWS infrastructure fundamentals.
