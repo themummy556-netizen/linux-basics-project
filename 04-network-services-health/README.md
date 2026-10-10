@@ -26,3 +26,7 @@ curl, ss, systemctl, journalctl, df, du, lsblk, free, uptime, ssh
 - A service (daemon) runs in the background and systemctl controls it.
 - "Connection refused" means nothing is listening on that port.
 - A script can combine many commands into one report.
+
+## Project Link
+
+NextWork: https://nextwork.ai/refreshed_olive_vibrant_plum/docs/9dc8053e-07e2-4a55-ac13-b90e9520d20b
