@@ -31,6 +31,12 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 ### 3. Process & Package Management
 - Monitored and managed running processes (`ps`, `kill`, `jobs`).
 - Installed and managed software packages using standard Linux package managers (`apt`).
+-
+### 4. Networking, Services & System Health
+
+- **Network Diagnostics:** Checked connectivity and inspected network responses using `ping`, `curl`, and `hostname -I`.
+- **Service Management:** Managed system services with `systemctl` (start, stop, status) and connected to a local SSH service.
+- **Health Checks:** Wrote a `healthcheck.sh` script that reports the state of the system and its services.
 
 ---
 
