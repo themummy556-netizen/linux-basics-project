@@ -1,0 +1,20 @@
+=== System Report - Thu Oct 15 01:16:08 EEST 2026 ===
+
+-- Uptime --
+ 01:16:08 up  5:33,  1 user,  load average: 0.08, 0.02, 0.01
+
+-- Memory --
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       526Mi       7.1Gi       4.1Mi       221Mi       7.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+
+-- Disk Usage for / --
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.9G  954G   1% /
+Disk OK: Usage is at 1%.
+
+-- Folder Sizes --
+Custom folder: /home/hisoka/devops-journey
+1.6M	/home/hisoka/devops-journey
+
+=== End of Report ===
