@@ -12,7 +12,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 | 02 | **Linux Level 2: Control Your System** | ✅ Completed | File Permissions (`750`/`700`), Users & Groups, Pipes, Redirection | [Project 2 Docs](02-control-your-system/admin-toolkit/README.md) |
 | 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](03-software-and-processes/admin-toolkit/README.md) |
 | 04 | **Linux Level 4: Network, Services & Health** | ✅ Completed | Networking Tools, systemd Services, System Health Checks | [Project 4 Docs](04-network-services-health/README.md) |
-| 05 | **Bash Scripting on Linux Mint** | ⏳ Pending | Variables, Conditionals, Loops, Functions | `In Development` |
+| 05 | **Bash Scripting on Linux Mint** | ✅ Completed | Variables, Conditionals, Loops, Arguments, Report Scripting | [Project 5 Docs](05-bash-scripting/README.md) |
 | 06 | **Automate Linux Logs with Cron** | ⏳ Pending | Cron Jobs, Log Automation, Scheduled Tasks | `In Development` |
 
 ---
@@ -27,6 +27,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 - **Pipes & Redirection:** Combined multi-stage commands using pipes (`|`) and redirection (`>`, `>>`) to process and save command output.
 - **Pattern Matching:** Used `grep` to filter and search text across files and command output.
 - **Shell Scripting:** Wrote reusable Bash scripts (`sysinfo.sh`, `census.sh`) that automate system reporting tasks.
+- **Script Arguments & Reports:** Wrote a `sysreport.sh` script that uses variables, `if/else`, `for` loops and `$1` to write a dated system report.
 
 ### 3. Process & Package Management
 - Monitored and managed running processes (`ps`, `kill`, `jobs`).
@@ -51,6 +52,9 @@ Real issues encountered and resolved during these projects, documented as **Prob
 | `curl` to port 631 returned "Connection refused" | CUPS (the printing service that listens on port 631) was not installed on my system | Installed it with `apt install cups` and started it with `systemctl` |
 | `chmod` returned "missing operand" and "No such file or directory" | Missing mode, then a relative path used from inside the same folder | Ran `chmod 755 healthcheck.sh` from the right folder after `pwd` and `ls` |
 | `ssh localhost` returned "Host key verification failed" | Typed `y` instead of the full word `yes` | Ran it again and typed `yes` |
+| `./sysreport.sh` returned "Permission denied" | The script was not executable | Ran `chmod +x sysreport.sh` |
+| `cat sysreport-*.txt` returned "No such file or directory" | The script had not run yet, so no report existed | Ran the script first, then `cat` |
+| Typing a folder path alone returned "Is a directory" | Bash tried to run the path as a command | Used `cd` followed by the path |
 
 *(This table grows as more projects are completed.)*
 
