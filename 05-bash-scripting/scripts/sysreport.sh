@@ -16,7 +16,7 @@ echo "-- Memory --" >> "$REPORT_FILE"
 free -h >> "$REPORT_FILE"
 echo "" >> "$REPORT_FILE"
 # Disk check with warning
-DISK_USAGE=$(df / | grep "/" | awk '{print $5}' | sed 's/%//')
+DISK_USAGE="$(df -h / | awk 'NR==2 {print $5}' | sed 's/%//')"
 
 echo "-- Disk Usage for / --" >> "$REPORT_FILE"
 df -h / >> "$REPORT_FILE"
