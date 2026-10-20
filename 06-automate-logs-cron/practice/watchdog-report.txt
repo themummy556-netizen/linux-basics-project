@@ -1,0 +1,27 @@
+
+=== Log Watchdog: 2026-10-19 05:22:33 ===
+Total requests: 50
+404 errors: 10
+500 errors: 5
+Top 3 IPs:
+      9 192.168.1.12
+      9 192.168.1.11
+      8 192.168.1.15
+
+=== Log Watchdog: 2026-10-19 05:30:01 ===
+Total requests: 50
+404 errors: 10
+500 errors: 5
+Top 3 IPs:
+      9 192.168.1.12
+      9 192.168.1.11
+      8 192.168.1.15
+
+=== Log Watchdog: 2026-10-19 05:35:01 ===
+Total requests: 50
+404 errors: 10
+500 errors: 5
+Top 3 IPs:
+      9 192.168.1.12
+      9 192.168.1.11
+      8 192.168.1.15
