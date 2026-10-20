@@ -13,7 +13,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 | 03 | **Linux Level 3: Software and Processes** | ✅ Completed | Package Management, Process Control, System Monitoring | [Project 3 Docs](03-software-and-processes/admin-toolkit/README.md) |
 | 04 | **Linux Level 4: Network, Services & Health** | ✅ Completed | Networking Tools, systemd Services, System Health Checks | [Project 4 Docs](04-network-services-health/README.md) |
 | 05 | **Bash Scripting on Linux Mint** | ✅ Completed | Variables, Conditionals, Loops, Arguments, Report Scripting | [Project 5 Docs](05-bash-scripting/README.md) |
-| 06 | **Automate Linux Logs with Cron** | ⏳ Pending | Cron Jobs, Log Automation, Scheduled Tasks | `In Development` |
+| 06 | **Automate Linux Logs with Cron** | ✅ Completed | Log Analysis (`awk`, `sed`), Backup & Restore (`tar`), `PATH`, Cron Scheduling | [Project 6 Docs](06-automate-logs-cron/README.md) |
 
 ---
 
@@ -39,6 +39,12 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 - **Service Management:** Managed system services with `systemctl` (start, stop, status) and connected to a local SSH service.
 - **Health Checks:** Wrote a `healthcheck.sh` script that reports the state of the system and its services.
 
+### 5. Log Analysis, Backup & Automation
+- **Log Analysis:** Used `awk`, `sort`, `uniq -c` and `grep -c` to rank IP addresses and count status codes in a 50-line access log.
+- **Safe Text Editing:** Used `sed` to replace text and anonymize IP addresses, and tested `sed -i` on a copy to keep the original log safe.
+- **Backup & Restore:** Created gzip-compressed archives with `tar`, restored them into a separate folder and verified them with `diff -qr`.
+- **Automation:** Built a Log Watchdog script, installed it in `~/bin` on the `PATH`, and scheduled it with `cron` using an absolute path.
+
 ---
 
 ## 🧩 Troubleshooting Log
@@ -55,6 +61,10 @@ Real issues encountered and resolved during these projects, documented as **Prob
 | `./sysreport.sh` returned "Permission denied" | The script was not executable | Ran `chmod +x sysreport.sh` |
 | `cat sysreport-*.txt` returned "No such file or directory" | The script had not run yet, so no report existed | Ran the script first, then `cat` |
 | Typing a folder path alone returned "Is a directory" | Bash tried to run the path as a command | Used `cd` followed by the path |
+| The guide's disk command used `disk_usage` and kept the `%` | Bash variable names are case-sensitive, and my `-gt 80` check needs a plain number | Kept `DISK_USAGE`, removed the `%` with `sed`, and backed up the script first |
+| The guide's cron line used `/home/mintuser/...` | It was another user's home path, so cron would not find my script | Used `realpath` to get my real path and checked it with `crontab -l` |
+| A count of 2 report headings did not prove cron ran | I had already run the script manually twice | Counted 3 headings, so at least one run came from cron, and checked the timestamps |
+| `diff -qr` printed nothing after a restore | I compared against `restored` instead of `restored2` because I reused a command from history | Read the names in the command, confirmed paths with `ls -d`, and ran `diff` again |
 
 *(This table grows as more projects are completed.)*
 
