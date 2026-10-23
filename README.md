@@ -1,10 +1,10 @@
 # AWS Cloud Engineering Journey: Core Linux & Git Portfolio
 
-Welcome to my centralized **Mono-Repo** documenting my progression from foundational system administration to cloud infrastructure readiness. This repository tracks **6 consecutive Linux projects** designed to build deep competencies before transitioning to advanced AWS architectures.
+Welcome to my centralized **Mono-Repo** documenting my progression from foundational system administration to cloud infrastructure readiness. This repository tracks **7 consecutive Linux projects** designed to build deep competencies before transitioning to advanced AWS architectures.
 
 ---
 
-## 📊 Project Registry (6-Phase Roadmap)
+## 📊 Project Registry (7-Phase Roadmap)
 
 | Phase | Project | Status | Core Technical Domain | Documentation |
 |---|---|---|---|---|
@@ -14,6 +14,7 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 | 04 | **Linux Level 4: Network, Services & Health** | ✅ Completed | Networking Tools, systemd Services, System Health Checks | [Project 4 Docs](04-network-services-health/README.md) |
 | 05 | **Bash Scripting on Linux Mint** | ✅ Completed | Variables, Conditionals, Loops, Arguments, Report Scripting | [Project 5 Docs](05-bash-scripting/README.md) |
 | 06 | **Automate Linux Logs with Cron** | ✅ Completed | Log Analysis (`awk`, `sed`), Backup & Restore (`tar`), `PATH`, Cron Scheduling | [Project 6 Docs](06-automate-logs-cron/README.md) |
+| 07 | **Harden a Bash Log Monitor on WSL** | ✅ Completed | systemd Service, Timer & Path Units, `logrotate`, SSH Key Login, `ufw` Firewall | [Project 7 Docs](07-harden-log-monitor/README.md) |
 
 ---
 
@@ -45,6 +46,12 @@ Welcome to my centralized **Mono-Repo** documenting my progression from foundati
 - **Backup & Restore:** Created gzip-compressed archives with `tar`, restored them into a separate folder and verified them with `diff -qr`.
 - **Automation:** Built a Log Watchdog script, installed it in `~/bin` on the `PATH`, and scheduled it with `cron` using an absolute path.
 
+### 6. System Hardening & Service Automation
+- **Least-Privilege Service:** Ran the log monitor as a dedicated `log-monitor` user with restricted folder permissions (`750` / `640`).
+- **systemd Scheduling:** Used a `.service`, a `.timer` that runs every minute, and a `.path` unit that runs the monitor when the log file changes.
+- **Log Rotation:** Wrote a `logrotate` policy (size, rotate count, create) and tested it with `--debug` and `--force`.
+- **SSH & Firewall Hardening:** Set up key-only SSH login (`PasswordAuthentication no`, `PermitRootLogin no`, `AllowUsers`) and turned on `ufw` after allowing port 22.
+
 ---
 
 ## 🧩 Troubleshooting Log
@@ -65,6 +72,9 @@ Real issues encountered and resolved during these projects, documented as **Prob
 | The guide's cron line used `/home/mintuser/...` | It was another user's home path, so cron would not find my script | Used `realpath` to get my real path and checked it with `crontab -l` |
 | A count of 2 report headings did not prove cron ran | I had already run the script manually twice | Counted 3 headings, so at least one run came from cron, and checked the timestamps |
 | `diff -qr` printed nothing after a restore | I compared against `restored` instead of `restored2` because I reused a command from history | Read the names in the command, confirmed paths with `ls -d`, and ran `diff` again |
+| `ssh-keygen` failed because the `.ssh` folder did not exist on Windows | Windows had never created that folder in my profile | Created it with `New-Item`, then ran `ssh-keygen` again |
+| `stat` returned "Permission denied" on the log folder | I locked it to `750` with owner `root:log-monitor`, so my user could not enter | Ran `stat` with `sudo` and confirmed `750` and `640` |
+| My practice files had the same names as the project files | Writing on top would erase my practice work, and the old timer was still running | Stopped the old timer, saved `.practice` copies, then wrote the project files |
 
 *(This table grows as more projects are completed.)*
 
