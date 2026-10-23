@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the Bash log monitor every minute
+
+[Timer]
+OnCalendar=minutely
+Persistent=true
+Unit=log-monitor.service
+
+[Install]
+WantedBy=timers.target

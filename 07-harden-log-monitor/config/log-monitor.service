@@ -1,0 +1,22 @@
+[Unit]
+Description=Scan the demo application log for warnings and errors
+Documentation=man:systemd.service(5)
+After=local-fs.target
+ConditionPathExists=/var/log/demo-app/application.log
+
+[Service]
+Type=oneshot
+User=log-monitor
+Group=log-monitor
+ExecStart=/usr/local/lib/log-monitor/log-monitor.sh
+LogsDirectory=log-monitor
+LogsDirectoryMode=0750
+UMask=0027
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
